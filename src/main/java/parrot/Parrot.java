@@ -2,7 +2,7 @@ package parrot;
 
 public class Parrot {
 
-    // Constantes para evitar "números mágicos"
+    // Constantes para evitar números mágicos
     private static final double BASE_SPEED = 12.0;
     private static final double LOAD_FACTOR = 9.0;
     private static final double MAX_NORWEGIAN_BLUE_SPEED = 24.0;
@@ -12,6 +12,7 @@ public class Parrot {
     private final double voltage;
     private final boolean isNailed;
 
+    // Construtor centralizado: mantido, mas agora apoiado por fábricas
     public Parrot(ParrotTypeEnum type, int numberOfCoconuts, double voltage, boolean isNailed) {
         this.type = type;
         this.numberOfCoconuts = numberOfCoconuts;
@@ -20,14 +21,38 @@ public class Parrot {
     }
 
     // -----------------------------
+    // Fábricas estáticas (melhoram assinatura e intenção)
+    // -----------------------------
+
+    public static Parrot europeanParrot() {
+        return new Parrot(ParrotTypeEnum.EUROPEAN, 0, 0.0, false);
+    }
+
+    public static Parrot africanParrotWithCoconuts(int numberOfCoconuts) {
+        return new Parrot(ParrotTypeEnum.AFRICAN, numberOfCoconuts, 0.0, false);
+    }
+
+    public static Parrot norwegianBlueParrot(double voltage, boolean isNailed) {
+        return new Parrot(ParrotTypeEnum.NORWEGIAN_BLUE, 0, voltage, isNailed);
+    }
+
+    // -----------------------------
     // Velocidade
     // -----------------------------
-    public double getSpeed() {
+
+    // Nova assinatura mais clara
+    public double calculateSpeed() {
         return switch (type) {
             case EUROPEAN -> getEuropeanSpeed();
             case AFRICAN -> getAfricanSpeed();
             case NORWEGIAN_BLUE -> getNorwegianBlueSpeed();
         };
+    }
+
+    // Metodo antigo mantido por compatibilidade com o código legado/testes
+    @Deprecated
+    public double getSpeed() {
+        return calculateSpeed();
     }
 
     private double getEuropeanSpeed() {
@@ -65,12 +90,20 @@ public class Parrot {
     // -----------------------------
     // Grito
     // -----------------------------
-    public String getCry() {
+
+    // Nova assinatura mais expressiva
+    public String getCrySound() {
         return switch (type) {
             case EUROPEAN -> getEuropeanCry();
             case AFRICAN -> getAfricanCry();
             case NORWEGIAN_BLUE -> getNorwegianBlueCry();
         };
+    }
+
+    // Metodo antigo mantido para compatibilidade
+    @Deprecated
+    public String getCry() {
+        return getCrySound();
     }
 
     private String getEuropeanCry() {
