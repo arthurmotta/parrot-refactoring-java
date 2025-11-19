@@ -2,6 +2,7 @@ package parrot;
 
 public class Parrot {
 
+    // Constantes para evitar "números mágicos"
     private static final double BASE_SPEED = 12.0;
     private static final double LOAD_FACTOR = 9.0;
     private static final double MAX_NORWEGIAN_BLUE_SPEED = 24.0;
@@ -34,7 +35,11 @@ public class Parrot {
     }
 
     private double getAfricanSpeed() {
-        return Math.max(0, getBaseSpeed() - getLoadFactor() * numberOfCoconuts);
+        double baseSpeed = getBaseSpeed();
+        double load = getLoadFactor() * numberOfCoconuts;
+        double adjustedSpeed = baseSpeed - load;
+
+        return Math.max(0, adjustedSpeed);
     }
 
     private double getNorwegianBlueSpeed() {
@@ -45,7 +50,8 @@ public class Parrot {
     }
 
     private double getBaseSpeed(double voltage) {
-        return Math.min(MAX_NORWEGIAN_BLUE_SPEED, voltage * getBaseSpeed());
+        double calculatedSpeed = voltage * getBaseSpeed();
+        return Math.min(MAX_NORWEGIAN_BLUE_SPEED, calculatedSpeed);
     }
 
     private double getLoadFactor() {
@@ -76,6 +82,7 @@ public class Parrot {
     }
 
     private String getNorwegianBlueCry() {
-        return voltage > 0 ? "Bzzzzzz" : "...";
+        boolean hasVoltage = voltage > 0;
+        return hasVoltage ? "Bzzzzzz" : "...";
     }
 }
