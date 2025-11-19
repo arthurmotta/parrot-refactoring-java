@@ -12,7 +12,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="BR"/>
     <property name="sun.boot.library.path" value="/opt/homebrew/Cellar/openjdk/25/libexec/openjdk.jdk/Contents/Home/lib"/>
-    <property name="sun.java.command" value="/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire/surefirebooter17984724894687834770.jar /Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire 2025-11-18T23-06-33_775-jvmRun1 surefire6745511960049438981tmp surefire_016459268992035112585tmp"/>
+    <property name="sun.java.command" value="/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire/surefirebooter695234286048094067.jar /Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire 2025-11-18T23-17-16_562-jvmRun1 surefire45667536954825856tmp surefire_017566306489297897637tmp"/>
     <property name="http.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/test-classes:/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/classes:/Users/arthuralmeida/.m2/repository/org/junit/jupiter/junit-jupiter/5.11.4/junit-jupiter-5.11.4.jar:/Users/arthuralmeida/.m2/repository/org/junit/jupiter/junit-jupiter-params/5.11.4/junit-jupiter-params-5.11.4.jar:/Users/arthuralmeida/.m2/repository/org/junit/jupiter/junit-jupiter-engine/5.11.4/junit-jupiter-engine-5.11.4.jar:/Users/arthuralmeida/.m2/repository/org/junit/platform/junit-platform-engine/1.11.4/junit-platform-engine-1.11.4.jar:/Users/arthuralmeida/.m2/repository/org/junit/jupiter/junit-jupiter-api/5.11.2/junit-jupiter-api-5.11.2.jar:/Users/arthuralmeida/.m2/repository/org/opentest4j/opentest4j/1.3.0/opentest4j-1.3.0.jar:/Users/arthuralmeida/.m2/repository/org/junit/platform/junit-platform-commons/1.11.2/junit-platform-commons-1.11.2.jar:/Users/arthuralmeida/.m2/repository/org/apiguardian/apiguardian-api/1.1.2/apiguardian-api-1.1.2.jar:"/>
@@ -29,7 +29,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="apple.awt.application.name" value="ForkedBooter"/>
-    <property name="surefire.real.class.path" value="/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire/surefirebooter17984724894687834770.jar"/>
+    <property name="surefire.real.class.path" value="/Users/arthuralmeida/Desktop/EDS - Luiz Paulo Maia - Refatoração [25E4_4] - Arthur Almeida /arthur_almeida_dr4_tp2/parrot-refactoring-java/target/surefire/surefirebooter695234286048094067.jar"/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="ftp.nonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.runtime.version" value="25"/>
@@ -59,14 +59,14 @@
     <property name="socksNonProxyHosts" value="local|*.local|169.254/16|*.169.254/16"/>
     <property name="java.class.version" value="69.0"/>
   </properties>
-  <testcase name="getSpeedOfEuropeanParrot" classname="parrot.ParrotTest" time="0.006"/>
-  <testcase name="getSpeedOfAfricanParrot_With_One_Coconut" classname="parrot.ParrotTest" time="0.001"/>
+  <testcase name="getSpeedOfEuropeanParrot" classname="parrot.ParrotTest" time="0.007"/>
+  <testcase name="getSpeedOfAfricanParrot_With_One_Coconut" classname="parrot.ParrotTest" time="0"/>
   <testcase name="getCryOfNorwegianBlueHighVoltage" classname="parrot.ParrotTest" time="0"/>
   <testcase name="getCryOfEuropeanParrot" classname="parrot.ParrotTest" time="0"/>
-  <testcase name="getCryOfNorwegianBlueNoVoltage" classname="parrot.ParrotTest" time="0"/>
+  <testcase name="getCryOfNorwegianBlueNoVoltage" classname="parrot.ParrotTest" time="0.001"/>
   <testcase name="getSpeedNorwegianBlueParrot_not_nailed" classname="parrot.ParrotTest" time="0"/>
-  <testcase name="getSpeedOfAfricanParrot_With_No_Coconuts" classname="parrot.ParrotTest" time="0.001"/>
-  <testcase name="getSpeedNorwegianBlueParrot_nailed" classname="parrot.ParrotTest" time="0"/>
+  <testcase name="getSpeedOfAfricanParrot_With_No_Coconuts" classname="parrot.ParrotTest" time="0"/>
+  <testcase name="getSpeedNorwegianBlueParrot_nailed" classname="parrot.ParrotTest" time="0.001"/>
   <testcase name="getSpeedOfAfricanParrot_With_Two_Coconuts" classname="parrot.ParrotTest" time="0"/>
   <testcase name="getSpeedNorwegianBlueParrot_not_nailed_high_voltage" classname="parrot.ParrotTest" time="0"/>
   <testcase name="getCryOfAfricanParrot" classname="parrot.ParrotTest" time="0"/>

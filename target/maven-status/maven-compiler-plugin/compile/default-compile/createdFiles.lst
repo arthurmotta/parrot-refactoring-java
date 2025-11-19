@@ -1,3 +1,7 @@
-parrot/Parrot$1.class
-parrot/ParrotTypeEnum.class
+parrot/EuropeanParrotBehavior.class
 parrot/Parrot.class
+parrot/Parrot$1.class
+parrot/AfricanParrotBehavior.class
+parrot/ParrotBehavior.class
+parrot/NorwegianBlueParrotBehavior.class
+parrot/ParrotTypeEnum.class
